@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Tecredita</title>
+    <link rel="icon" href="imagenes/logotecredita18x18.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagenes/logotecredita1.png" alt="Logotipo de Tecredita" width="100">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <h1>Registra y adquiere tu crédito</h1>
+    <p>Regístrate ingresando los siguientes datos.</p>
+
+    <section>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <div>
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Nestor Germán" required>
+                </div>
+
+                <div>
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ej. Pacheco Pardo" required>
+                </div>
+
+                <div>
+                    <label for="dni">DNI</label>
+                    <input type="text" id="dni" name="dni" maxlength="8" placeholder="DNI de 8 dígitos" required>
+                </div>
+
+                <div>
+                    <label for="ruc">RUC</label>
+                    <input type="text" id="ruc" name="ruc" maxlength="11" placeholder="RUC de 11 dígitos" required>
+                </div>
+
+                <div>
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular" maxlength="9" placeholder="9XX XXX XXX" required>
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Crea tu contraseña" required>
+                </div>
+
+                <div>
+                    <label for="contrasena2">Repetir contraseña</label>
+                    <input type="password" id="contrasena2" name="contrasena2" placeholder="Repite tu contraseña" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del crédito</legend>
+
+                <div>
+                    <label for="plazo">Plazo deseado</label>
+                    <select name="plazo" id="plazo">
+                        <option value="1">1 mes</option>
+                        <option value="2">2 meses</option>
+                        <option value="3">3 meses</option>
+                        <option value="4">4 meses</option>
+                        <option value="5">5 meses</option>
+                        <option value="6">6 meses</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos</legend>
+                <p>Adjunta tu ficha RUC y una copia de tu DNI.</p>
+
+                <div>
+                    <label for="ficha-ruc">Ficha RUC</label>
+                    <input type="file" id="ficha-ruc" name="ficha-ruc" required>
+                </div>
+
+                <div>
+                    <label for="dni-archivo">Copia del DNI</label>
+                    <input type="file" id="dni-archivo" name="dni-archivo" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Autorizaciones</legend>
+
+                <div>
+                    <input type="checkbox" id="terminos" name="terminos" value="acepto" required>
+                    <label for="terminos">Estoy de acuerdo con los términos y condiciones</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="datos-personales" name="datos-personales" value="acepto" required>
+                    <label for="datos-personales">Estoy de acuerdo con el tratamiento de datos personales</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <button type="submit" name="btn-registrarse">Registrarse</button>
+                <button type="reset" name="btn-limpiar">Limpiar</button>
+            </div>
+        </form>
+    </section>
+        </main>
+
+    <footer>
+        <p>Chiclayo, Perú</p>
+        <p>&copy; Tecredita | 2021</p>
+    </footer>
+</body>
+
+</html>
